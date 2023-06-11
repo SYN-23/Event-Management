@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Login from './Components/Login';
+
 
 function App() {
   return (
     <div className="App">
-      <h1>{process.env.REACT_APP_SECRET_KEY}</h1>
+     <Login></Login>
     </div>
   );
 }
