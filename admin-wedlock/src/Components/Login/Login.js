@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {  useState } from 'react';
 import './Login.css';
 import {
     MDBBtn,
@@ -8,9 +8,27 @@ import {
     MDBInput
   }
   from 'mdb-react-ui-kit';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+     const [email,setEmail]=useState("");
+     const[password,setPassword]=useState("");
+     let navigate=useNavigate();
+     const loginHandeler=()=>{
+      if(email==="" && password===""){
+        alert("Fill both email and password first")
+        return
+    }
 
+      if(email==="abc@gmail.com" && password==="123@45"){
+        localStorage.setItem('authenticated','true');
+        navigate('/');
+        window.location.reload(true);
+      }
+
+     }
+
+     
 
 
 
@@ -33,12 +51,12 @@ const Login = () => {
             <p>Please login to your account</p>
 
 
-            <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email'/>
-            <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password'/>
+            <MDBInput wrapperClass='mb-4' label='Email address' id='form1' type='email' onChange={event=>setEmail(event.target.value)}/>
+            <MDBInput wrapperClass='mb-4' label='Password' id='form2' type='password' onChange={event=>setPassword(event.target.value)}/>
 
 
             <div className="text-center pt-1 mb-5 pb-1">
-              <MDBBtn className="mb-4 w-100 gradient-custom-2">Sign in</MDBBtn>
+              <MDBBtn className="mb-4 w-100 gradient-custom-2" onClick={loginHandeler}>Sign in</MDBBtn>
               <p className="text-muted" >Forgot password?</p>
             </div>
 
