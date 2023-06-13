@@ -1,6 +1,5 @@
 import React from 'react';
-import sidebar_menu from '../../constants/sidebar-menu';
-import Sidebar from '../Sidebar/Sidebar';
+
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 const Dashboard = () => {
@@ -21,8 +20,7 @@ const Dashboard = () => {
        },[])
     return (
         <div>
-          {/* <Sidebar menu={sidebar_menu} /> */}
-          <h4>Dashboard</h4>  
+          <h1>Dashboard</h1>  
         </div>
     );
 }
