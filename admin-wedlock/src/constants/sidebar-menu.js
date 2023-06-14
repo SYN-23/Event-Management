@@ -16,17 +16,17 @@ const sidebar_menu = [
         path: '/addEvent',
         title: 'Add Events',
     },
-    {
+   {
         id: 3,
         icon: ShippingIcon,
-        path: '/manageEvent',
-        title: 'Manage Event Galary',
+        path: '/eventList',
+        title: 'Event List',
     },
     {
         id: 4,
         icon: ShippingIcon,
-        path: '/eventList',
-        title: 'Event List',
+        path: '/manageEvent',
+        title: 'Manage Event Galary',
     },
     {
         id: 5,

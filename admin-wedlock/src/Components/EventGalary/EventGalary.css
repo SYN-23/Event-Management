@@ -1,0 +1,40 @@
+.galaryInput{
+    margin-top: 60px;
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+}
+.galaryInput h1{
+    text-align: center;
+}
+
+.galary{
+    margin-top: 60px;
+    margin-left: 10%;
+    width: 80%;
+    min-height: 600px;
+    margin-right: 10%;
+    border: 1px solid red;
+}
+.galary h4{
+   text-align: center;
+}
+#imageBtn{
+    margin-top: 5px;
+    height: 45px;
+    width: 100px;
+    
+}
+
+
+
+@media (max-width: 1024px) {
+    .fileholder{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .galary{
+        min-height: 500px;
+    }
+}

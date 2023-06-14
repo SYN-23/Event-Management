@@ -1,0 +1,28 @@
+.eventFrom{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 80%;
+    margin-right: 10%;
+}
+
+.file{
+    margin-bottom: 40px;
+    
+}
+.title{
+    text-align: center;
+}
+
+.fileholder{
+ width: 40%;
+ margin-left: 30%;
+ margin-right: 30%;
+}
+
+@media (max-width: 1024px) {
+    .fileholder{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
