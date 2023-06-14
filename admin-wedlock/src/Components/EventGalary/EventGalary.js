@@ -57,7 +57,7 @@ const EventGalary = () => {
                     <tr key={image.id} >
                     <th scope='row'>{image.id}</th>
                     <td>{image.images}</td>
-                    <MDBBtn className=" mb-0  gradient-custom-2 " id='imageBtn' >Delete</MDBBtn>
+                    <td><MDBBtn className=" mb-0  gradient-custom-2 " id='imageBtn' >Delete</MDBBtn></td>
                     
                      </tr>
                     
